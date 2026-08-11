@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mrs. T.C. Phiri's 80th Birthday</title>
+<title>Mrs. T.C. Phiri's 80th Birthday — Family Weekend</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap');
 
@@ -192,7 +192,7 @@
     <a href="#rsvp">RSVP</a>
   </div>
 </nav>
-
+<div class="badge">Family Weekend</div>
 
 <header class="hero">
   <div class="confetti"></div>
@@ -203,7 +203,7 @@
     <p class="sub">Mrs. T.C. Phiri</p>
     <div class="rule"></div>
     <div class="facts">
-      <div><span class="label">Date</span><span class="value">Sat, Dec 19, 2026</span></div>
+      <div><span class="label">Weekend of</span><span class="value">Dec 18&ndash;20, 2026</span></div>
       <div><span class="label">Gala Venue</span><span class="value">Njele Country Park</span></div>
       <div><span class="label">Location</span><span class="value">Ndola, Zambia</span></div>
     </div>
@@ -224,12 +224,28 @@
 
 <section class="timeline" id="schedule">
   <div class="section-head">
-    <span class="eyebrow">Saturday, December 19, 2026</span>
-    <h2>Join the Celebration</h2>
-    <p>You're warmly invited to the Thanksgiving Service and the Black-Tie Gala as we celebrate this remarkable milestone.</p>
+    <span class="eyebrow">Full Weekend Schedule</span>
+    <h2>Four Days of Celebration</h2>
+    <p>From casual welcome drinks to an elegant black-tie gala and a relaxed family send-off &mdash; here's everything happening across the weekend.</p>
   </div>
 
   <div class="day-list">
+
+    <div class="day gold">
+      <div class="day-date">Friday &middot; December 18, 2026</div>
+      <div class="day-card">
+        <div class="info">
+          <span class="tag">Early Arrivals</span>
+          <h3>Welcome Drinks &amp; Dinner</h3>
+          <p>A casual, friendly start to the weekend for anyone already in town — relaxed drinks and dinner at Mozambik.</p>
+        </div>
+        <div class="facts">
+          <div><div class="f-label">Time</div><div class="f-val">From 18:00 hrs</div></div>
+          <div><div class="f-label">Location</div><div class="f-val">Mozambik Restaurant, Ndola</div></div>
+          <div><div class="f-label">Dress Code</div><div class="f-val">No dress code — come as you are</div></div>
+        </div>
+      </div>
+    </div>
 
     <div class="day blush">
       <div class="day-date">Saturday Morning &middot; December 19, 2026</div>
@@ -259,6 +275,23 @@
           <div><div class="f-label">Time</div><div class="f-val">From 18:00 hrs</div></div>
           <div><div class="f-label">Location</div><div class="f-val">Njele Country Park, Ndola<br>Plot #38973 (Opposite Zesco Training Centre)<br>Ndola&ndash;Kitwe Dual Carriage Way, Dola Hill</div></div>
           <div><div class="f-label">Dress Code</div><div class="f-val">Black tie with royal blue accents</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="day sky">
+      <div class="day-date">Sunday &middot; December 20, 2026</div>
+      <div class="day-card">
+        <div class="info">
+          <span class="tag">Family BBQ</span>
+          <h3>A Joyful Send-Off</h3>
+          <p>We close the weekend with a warm and relaxed family BBQ, filled with good food, laughter, and time together — a casual afternoon to celebrate family and fellowship.</p>
+          <p class="note">Strictly by invitation — please do not forward this invite.</p>
+        </div>
+        <div class="facts">
+          <div><div class="f-label">Time</div><div class="f-val">From 13:00 hrs</div></div>
+          <div><div class="f-label">Location</div><div class="f-val">Phiri Residence<br>3452 Kangere Square, Northrise, Ndola</div></div>
+          <div><div class="f-label">Dress Code</div><div class="f-val">Blue denim + event T-shirt</div></div>
         </div>
       </div>
     </div>
@@ -372,6 +405,15 @@
         <div id="rsvpNameStep">
           <label for="rsvpName" style="display:block;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:#8a92a8;margin-bottom:0.35rem;">Full Name</label>
           <input type="text" id="rsvpName" placeholder="Your full name" style="width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(201,162,75,0.35);color:var(--cream);padding:0.65rem 0.8rem;font-family:'Jost',sans-serif;font-size:0.85rem;border-radius:3px;margin-bottom:1rem;">
+
+          <label for="tSize" style="display:block;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:#8a92a8;margin-bottom:0.35rem;">Sunday BBQ T-Shirt Size</label>
+          <select id="tSize" style="width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(201,162,75,0.35);color:var(--cream);padding:0.65rem 0.8rem;font-family:'Jost',sans-serif;font-size:0.85rem;border-radius:3px;margin-bottom:0.4rem;">
+            <option value="">Select size</option>
+            <option>XS</option><option>S</option><option>M</option>
+            <option>L</option><option>XL</option><option>XXL</option>
+          </select>
+          <p style="font-size:0.72rem;color:#8a92a8;margin-bottom:1rem;">We'll have your event tee ready for Sunday.</p>
+
           <button type="button" id="rsvpConfirm" style="width:100%;background:var(--gold);color:var(--navy-deep);border:none;padding:0.75rem;letter-spacing:0.15em;text-transform:uppercase;font-size:0.68rem;border-radius:3px;cursor:pointer;">Confirm RSVP</button>
         </div>
 
@@ -419,6 +461,7 @@
     rsvpNo.classList.add('active'); rsvpYes.classList.remove('active');
     cardNo.classList.add('show'); cardYes.classList.remove('show');
   });
+
   function submitToGoogleForm(formId, entries){
     const url = `https://docs.google.com/forms/d/e/${formId}/formResponse`;
     const params = new URLSearchParams(entries);
@@ -426,15 +469,28 @@
   }
 
   const RSVP_FORM_ID = '1FAIpQLSfYyKwjyRZm5Wh0APUqMdRTPj8jdGpfRd2LufMJKXsNRGD6UQ';
-  const SITE_TAG = 'General';
+  const TSHIRT_FORM_ID = '1FAIpQLSdwX0XabxvMLQC_ecsaRKQv4AEBDzCkMPmqB6cD_o47F3Uw6g';
+  const SITE_TAG = 'Family';
 
   document.getElementById('rsvpConfirm').addEventListener('click', () => {
     const name = document.getElementById('rsvpName').value.trim();
+    const size = document.getElementById('tSize').value;
     if(!name){ alert('Please enter your name.'); return; }
+
     submitToGoogleForm(RSVP_FORM_ID, {
       'entry.463051025': name,
       'entry.1267824279': SITE_TAG
     });
+
+    if(size){
+      submitToGoogleForm(TSHIRT_FORM_ID, {
+        'entry.1971484509': name,
+        'entry.1711997983': size
+      });
+      const msg = encodeURIComponent('T-Shirt Order for Mrs. T.C. Phiri\'s 80th Birthday (Sunday BBQ)\nName: ' + name + '\nSize: ' + size);
+      window.open(`https://wa.me/18328538764?text=${msg}`, '_blank');
+    }
+
     document.getElementById('rsvpNameStep').style.display = 'none';
     document.getElementById('rsvpAfter').style.display = 'block';
   });
