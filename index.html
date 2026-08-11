@@ -147,6 +147,7 @@
   .guest-row{display:flex;gap:0.6rem;margin-bottom:0.7rem;align-items:center;}
   .guest-row input{flex:1;background:rgba(255,255,255,0.06);border:1px solid rgba(201,162,75,0.35);color:var(--cream);padding:0.65rem 0.8rem;font-family:'Jost',sans-serif;font-size:0.85rem;border-radius:3px;}
   .guest-row select{flex:0 0 86px;background:rgba(255,255,255,0.06);border:1px solid rgba(201,162,75,0.35);color:var(--cream);padding:0.65rem 0.4rem;font-family:'Jost',sans-serif;font-size:0.8rem;border-radius:3px;}
+  .guest-row select option{color:var(--ink);background:#fff;}
   .removeGuest{flex:0 0 auto;background:transparent;border:1px solid rgba(201,162,75,0.4);color:var(--gold-light);width:32px;height:32px;border-radius:3px;cursor:pointer;font-size:1rem;line-height:1;}
   .removeGuest:hover{background:rgba(201,162,75,0.15);}
   .add-guest-btn{width:100%;background:transparent;border:1px dashed rgba(201,162,75,0.45);color:var(--gold-light);padding:0.6rem;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;border-radius:3px;cursor:pointer;margin-bottom:1rem;}
@@ -477,6 +478,11 @@
   const TSHIRT_FORM_ID = '1FAIpQLSdwX0XabxvMLQC_ecsaRKQv4AEBDzCkMPmqB6cD_o47F3Uw6g';
   const SITE_TAG = 'Family';
 
+  // TODO: add an "Invited by / RSVP'd by" short-answer question to your RSVP
+  // Google Form (same shared form as General), then replace this with its
+  // real entry ID.
+  const INVITED_BY_ENTRY = 'entry.XXXXXXXXX';
+
   // Dynamic guest rows (name + t-shirt size)
   const guestRows = document.getElementById('guestRows');
   document.getElementById('addGuest').addEventListener('click', () => {
@@ -503,11 +509,17 @@
 
     if(guests.length === 0){ alert('Please enter at least one name.'); return; }
 
+    // The first name entered is treated as the primary RSVP — every guest
+    // in this submission (including the primary) is tagged with that name
+    // so the sheet shows who invited whom.
+    const primaryName = guests[0].name;
+
     const tshirtLines = [];
     guests.forEach(g => {
       submitToGoogleForm(RSVP_FORM_ID, {
         'entry.463051025': g.name,
-        'entry.1267824279': SITE_TAG
+        'entry.1267824279': SITE_TAG,
+        [INVITED_BY_ENTRY]: primaryName
       });
       if(g.size){
         submitToGoogleForm(TSHIRT_FORM_ID, {
