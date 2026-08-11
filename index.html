@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mrs. T.C. Phiri's 80th Birthday</title>
+<title>Mrs. T.C. Phiri's 80th Birthday — Family Weekend</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap');
 
@@ -146,6 +146,7 @@
 
   .guest-row{display:flex;gap:0.6rem;margin-bottom:0.7rem;align-items:center;}
   .guest-row input{flex:1;background:rgba(255,255,255,0.06);border:1px solid rgba(201,162,75,0.35);color:var(--cream);padding:0.65rem 0.8rem;font-family:'Jost',sans-serif;font-size:0.85rem;border-radius:3px;}
+  .guest-row select{flex:0 0 86px;background:rgba(255,255,255,0.06);border:1px solid rgba(201,162,75,0.35);color:var(--cream);padding:0.65rem 0.4rem;font-family:'Jost',sans-serif;font-size:0.8rem;border-radius:3px;}
   .removeGuest{flex:0 0 auto;background:transparent;border:1px solid rgba(201,162,75,0.4);color:var(--gold-light);width:32px;height:32px;border-radius:3px;cursor:pointer;font-size:1rem;line-height:1;}
   .removeGuest:hover{background:rgba(201,162,75,0.15);}
   .add-guest-btn{width:100%;background:transparent;border:1px dashed rgba(201,162,75,0.45);color:var(--gold-light);padding:0.6rem;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;border-radius:3px;cursor:pointer;margin-bottom:1rem;}
@@ -183,6 +184,8 @@
     .invite-card{padding:2.4rem 1.6rem;}
     .invite-card .facts{gap:1.4rem;}
     section{padding:4.5rem 6vw;}
+    .guest-row{flex-wrap:wrap;}
+    .guest-row select{flex:1 1 100%;}
   }
 </style>
 </head>
@@ -199,18 +202,18 @@
     <a href="#rsvp">RSVP</a>
   </div>
 </nav>
-
+<div class="badge">Family Weekend</div>
 
 <header class="hero">
   <div class="confetti"></div>
   <div class="invite-card">
     <div class="crest">&#10022;</div>
-    <span class="eyebrow">You are joyfully invited</span>
+    <span class="eyebrow">You are joyfully invited to join the</span>
     <h1>Eightieth Birthday</h1>
-    <p class="sub">Mrs. T.C. Phiri</p>
+    <p class="sub">of Mrs. T.C. Phiri</p>
     <div class="rule"></div>
     <div class="facts">
-      <div><span class="label">Date</span><span class="value">Sat, Dec 19, 2026</span></div>
+      <div><span class="label">Weekend of</span><span class="value">Dec 18&ndash;20, 2026</span></div>
       <div><span class="label">Gala Venue</span><span class="value">Njele Country Park</span></div>
       <div><span class="label">Location</span><span class="value">Ndola, Zambia</span></div>
     </div>
@@ -231,12 +234,28 @@
 
 <section class="timeline" id="schedule">
   <div class="section-head">
-    <span class="eyebrow">Saturday, December 19, 2026</span>
-    <h2>Join the Celebration</h2>
-    <p>You're warmly invited to the Thanksgiving Service and the Black-Tie Gala as we celebrate this remarkable milestone.</p>
+    <span class="eyebrow">Full Weekend Schedule</span>
+    <h2>Join us for Celebration</h2>
+    <p>From casual welcome drinks to an elegant black-tie gala and a relaxed family send-off &mdash; here's everything happening across the weekend.</p>
   </div>
 
   <div class="day-list">
+
+    <div class="day gold">
+      <div class="day-date">Friday &middot; December 18, 2026</div>
+      <div class="day-card">
+        <div class="info">
+          <span class="tag">Early Arrivals</span>
+          <h3>Welcome Drinks &amp; Dinner</h3>
+          <p>A casual, friendly start to the weekend for anyone already in town — relaxed drinks and dinner at Mozambik.</p>
+        </div>
+        <div class="facts">
+          <div><div class="f-label">Time</div><div class="f-val">From 18:00 hrs</div></div>
+          <div><div class="f-label">Location</div><div class="f-val">Mozambik Restaurant, Ndola</div></div>
+          <div><div class="f-label">Dress Code</div><div class="f-val">No dress code — come as you are</div></div>
+        </div>
+      </div>
+    </div>
 
     <div class="day blush">
       <div class="day-date">Saturday Morning &middot; December 19, 2026</div>
@@ -266,6 +285,23 @@
           <div><div class="f-label">Time</div><div class="f-val">From 18:00 hrs</div></div>
           <div><div class="f-label">Location</div><div class="f-val">Njele Country Park, Ndola<br>Plot #38973 (Opposite Zesco Training Centre)<br>Ndola&ndash;Kitwe Dual Carriage Way, Dola Hill</div></div>
           <div><div class="f-label">Dress Code</div><div class="f-val">Black tie with royal blue accents</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="day sky">
+      <div class="day-date">Sunday &middot; December 20, 2026</div>
+      <div class="day-card">
+        <div class="info">
+          <span class="tag">Family BBQ</span>
+          <h3>A Joyful Send-Off</h3>
+          <p>We close the weekend with a warm and relaxed family BBQ, filled with good food, laughter, and time together — a casual afternoon to celebrate family and fellowship.</p>
+          <p class="note">Strictly by invitation — please do not forward this invite.</p>
+        </div>
+        <div class="facts">
+          <div><div class="f-label">Time</div><div class="f-val">From 13:00 hrs</div></div>
+          <div><div class="f-label">Location</div><div class="f-val">Phiri Residence<br>3452 Kangere Square, Northrise, Ndola</div></div>
+          <div><div class="f-label">Dress Code</div><div class="f-val">Blue denim + event T-shirt</div></div>
         </div>
       </div>
     </div>
@@ -315,7 +351,7 @@
 
 <section class="twocol" id="travel">
   <div class="twocol-inner">
-    <div>
+    <div style="grid-column:1 / -1;">
       <h3>Getting Around Ndola</h3>
       <p>Ndola is served by Simon Mwansa Kapwepwe International Airport (NLA). Guests may arrange airport pick-ups through hotel shuttles or private taxi operators at the arrival area.</p>
       <ul>
@@ -324,19 +360,6 @@
         <li><b>Local Taxis</b> — bookable by phone or hotel concierge, ideal for hops between hotels, Njele Country Park, the Cathedral, and the Phiri Residence</li>
         <li><b>Ride-Hailing Apps</b> — Ulendo Taxi &amp; Yango, for safe transport with upfront pricing</li>
       </ul>
-    </div>
-    <div>
-      <h3>Things to Do in Ndola</h3>
-      <div class="todo-grid">
-        <div class="item"><b>Dag Hammarskjöld Memorial</b><span>Peaceful &amp; historic</span></div>
-        <div class="item"><b>Copperbelt Museum</b><span>Mining history + heritage</span></div>
-        <div class="item"><b>Café Zed</b><span>Modern brunch + coffee</span></div>
-        <div class="item"><b>Buteko Road &amp; City Centre</b><span>Shops, markets, culture</span></div>
-        <div class="item"><b>Lake Chilengwa</b><span>Scenic natural landmark</span></div>
-        <div class="item"><b>Protea Hotel Poolside</b><span>Relax, dine, unwind</span></div>
-        <div class="item"><b>Ndola Golf Club</b><span>Great course + clubhouse</span></div>
-        <div class="item"><b>Local Craft Markets</b><span>Chitenge, carvings, handmade items</span></div>
-      </div>
     </div>
   </div>
 </section>
@@ -377,15 +400,22 @@
         <h4>We can't wait to see you!</h4>
 
         <div id="rsvpNameStep">
-          <label style="display:block;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:#8a92a8;margin-bottom:0.35rem;">Full Name(s)</label>
-          <p style="font-size:0.72rem;color:#8a92a8;margin-bottom:0.8rem;">RSVPing for more than yourself? Add each guest below.</p>
+          <label style="display:block;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:#8a92a8;margin-bottom:0.35rem;">Guests &amp; T-Shirt Sizes</label>
+          <p style="font-size:0.72rem;color:#8a92a8;margin-bottom:0.8rem;">RSVPing for your family? Add each guest and their Sunday BBQ T-shirt size below.</p>
           <div id="guestRows">
             <div class="guest-row">
               <input type="text" class="guestName" placeholder="Guest full name">
+              <select class="guestSize">
+                <option value="">Size</option>
+                <option>XS</option><option>S</option><option>M</option>
+                <option>L</option><option>XL</option><option>XXL</option>
+              </select>
               <button type="button" class="removeGuest" aria-label="Remove guest">&times;</button>
             </div>
           </div>
           <button type="button" id="addGuest" class="add-guest-btn">+ Add another guest</button>
+          <p style="font-size:0.72rem;color:#8a92a8;margin-bottom:1rem;">We'll have each guest's event tee ready for Sunday.</p>
+
           <button type="button" id="rsvpConfirm" style="width:100%;background:var(--gold);color:var(--navy-deep);border:none;padding:0.75rem;letter-spacing:0.15em;text-transform:uppercase;font-size:0.68rem;border-radius:3px;cursor:pointer;">Confirm RSVP</button>
         </div>
 
@@ -436,6 +466,7 @@
     rsvpNo.classList.add('active'); rsvpYes.classList.remove('active');
     cardNo.classList.add('show'); cardYes.classList.remove('show');
   });
+
   function submitToGoogleForm(formId, entries){
     const url = `https://docs.google.com/forms/d/e/${formId}/formResponse`;
     const params = new URLSearchParams(entries);
@@ -443,14 +474,16 @@
   }
 
   const RSVP_FORM_ID = '1FAIpQLSfYyKwjyRZm5Wh0APUqMdRTPj8jdGpfRd2LufMJKXsNRGD6UQ';
-  const SITE_TAG = 'General';
+  const TSHIRT_FORM_ID = '1FAIpQLSdwX0XabxvMLQC_ecsaRKQv4AEBDzCkMPmqB6cD_o47F3Uw6g';
+  const SITE_TAG = 'Family';
 
-  // Dynamic guest rows
+  // Dynamic guest rows (name + t-shirt size)
   const guestRows = document.getElementById('guestRows');
   document.getElementById('addGuest').addEventListener('click', () => {
     const row = document.createElement('div');
     row.className = 'guest-row';
     row.innerHTML = '<input type="text" class="guestName" placeholder="Guest full name">' +
+      '<select class="guestSize"><option value="">Size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select>' +
       '<button type="button" class="removeGuest" aria-label="Remove guest">&times;</button>';
     guestRows.appendChild(row);
   });
@@ -461,16 +494,35 @@
   });
 
   document.getElementById('rsvpConfirm').addEventListener('click', () => {
-    const names = Array.from(document.querySelectorAll('.guestName'))
-      .map(i => i.value.trim())
-      .filter(n => n.length > 0);
-    if(names.length === 0){ alert('Please enter at least one name.'); return; }
-    names.forEach(name => {
+    const guests = Array.from(document.querySelectorAll('#guestRows .guest-row'))
+      .map(row => ({
+        name: row.querySelector('.guestName').value.trim(),
+        size: row.querySelector('.guestSize').value
+      }))
+      .filter(g => g.name.length > 0);
+
+    if(guests.length === 0){ alert('Please enter at least one name.'); return; }
+
+    const tshirtLines = [];
+    guests.forEach(g => {
       submitToGoogleForm(RSVP_FORM_ID, {
-        'entry.463051025': name,
+        'entry.463051025': g.name,
         'entry.1267824279': SITE_TAG
       });
+      if(g.size){
+        submitToGoogleForm(TSHIRT_FORM_ID, {
+          'entry.1971484509': g.name,
+          'entry.1711997983': g.size
+        });
+        tshirtLines.push(g.name + ' — ' + g.size);
+      }
     });
+
+    if(tshirtLines.length){
+      const msg = encodeURIComponent('T-Shirt Order for Mrs. T.C. Phiri\'s 80th Birthday (Sunday BBQ)\n' + tshirtLines.join('\n'));
+      window.open(`https://wa.me/18328538764?text=${msg}`, '_blank');
+    }
+
     document.getElementById('rsvpNameStep').style.display = 'none';
     document.getElementById('rsvpAfter').style.display = 'block';
   });
